@@ -1,17 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
+
+import "./styles.css";
+import ValidatedLoginForm from "./ValidatedLoginForm";
 
 function App() {
   return (
-    <div>
-      <ValidateLoginForm />
+    <div className="App">
+      <h1>Validated Login Form</h1>
+      <ValidatedLoginForm />
     </div>
   );
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
-
-serviceWorker.unregister();
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
